@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Joke API</title>
+  </head>
+  <style>
+    body,input,select,button{
+      font-size:20px;
+    }
+  </style>
+  <body>
+    <form action="/" method="post">
+        <p>
+          You can select multiple blacklist flags
+        </p>
+          <label for="flags">Blacklist flags: </label>
+          <select id="flags" name="flags" multiple>
+            <option value="nsfw">nsfw</option>
+            <option value="religious">religious</option>
+            <option value="political">political</option>
+            <option value="racist">racist</option>
+            <option value="sexist">sexist</option>
+            <option value="explicit">explicit</option>
+          </select><br /><br />
+          <label for="amount">Enter number of jokes you want: </label>
+          <input type="number" id="amount" name="amount" value="">
+          <button type="submit" name="submit">Get Link</button>
+        </form>  </body>
+</html>
